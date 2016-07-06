@@ -6,7 +6,7 @@ Date:	July 5, 2016
 
 ## Problem:
 
-Given two words  and a dictionary, find the length of shortest transformation sequence from start to end, such that:
+Given two words  and a dictionary, find the length of shortest transformation sequence from first_word to second_word, such that:
 
 Only one letter can be changed at a time.
 
