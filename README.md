@@ -14,7 +14,7 @@ Each intermediate word must exist in the dictionary.
 
 For example, Given: start = “hit” end = “cog” dict = ["hot","dot","dog","lot","log"]
 
-As one shortest transformation is “hit” -> “hot” -> “dot” -> “dog” -> “cog”, return its length 5.
+As one shortest transformation is “hit” -> “hot” -> “dot” -> “dog” -> “cog”, return its length 4.
 
 ## How to run this program:
 
