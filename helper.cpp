@@ -22,8 +22,8 @@ bool word_in_dictionary(string word){
 	unordered_map<string, int>::const_iterator it = dictionary.find(word);
 	if (it == dictionary.end()){
 		return false;
-    }
-    return true;
+	}
+	return true;
 }
 
 
@@ -31,8 +31,8 @@ bool visited_word(string word){
 	unordered_map<string, int>::const_iterator it = visited.find(word);
 	if (it == visited.end()){
 		return false;
-    }
-    return true;
+	}
+	return true;
 }
 
 
