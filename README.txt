@@ -1,5 +1,5 @@
 README: Dictionary Dash
-Author: Kathryn (Katie) Shea
+Author: kshea
 Date:	July 5, 2016
 
 Input: two words and a dictionary.
@@ -34,20 +34,4 @@ second_word
 dictionary_word_1
 dictionary_word_2
 ...
-
-
-
-How did you approach solving this problem?
-
-When finding the shortest path between two objects, a breadth first search is often the simplest way to do so effectively so that’s what I’ve implemented using a queue of pairs where each pair contains a word and the distance from the start to that word. The dictionary was stored as a hash table so that look up time is, on average, constant. Another hash table was used to know which words have already been visited.
-
-
-How did you check that your solution is correct?
-
-I attempted to create as many different test cases as possible including various invalid input files as well as testing for words that don’t exist in the given dictionary. I tested empty dictionaries and dictionaries with up to (only) 500 words. I tried to break the program. Please let me know if you break it and under what conditions it breaks. I’d be curious to know how big the dictionary can get before something happens.
-
-
-Specify any assumptions that you have made.
-
-I tried my best to account for most exceptions. The problem states that the words will all be the same length and lowercase but even if they’re not I’ve put some error codes in for those cases. I suppose my code assumes the input file is in the above format but it would still run you just wouldn’t get the result you might expect I guess.
 
