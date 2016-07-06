@@ -1,0 +1,7 @@
+hit
+cat
+
+hit
+bat
+sat
+hot
