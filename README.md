@@ -29,9 +29,9 @@ test4.txt
 test5.txt
 test6.txt
 test7.txt
-test8.txt
 test9.txt
 
+test8.txt was a blank file which couldn't be uploaded.
 
 Additional input files can be created and should be formatted as follows:
 first_word
