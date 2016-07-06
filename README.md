@@ -1,6 +1,7 @@
 # Dictionary Dash
 
 Author: kshea
+
 Date:	July 5, 2016
 
 ##Input
