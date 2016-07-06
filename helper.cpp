@@ -10,7 +10,7 @@ using namespace std;
 
 /* GLOBAL VARIABLES */
 unordered_map<string, int> dictionary;	// dictionary stored as a hash table
-unordered_map<string, int> visited;		// hash table of words visited during shortest_path()
+unordered_map<string, int> visited;	// hash table of words visited during shortest_path()
 const int ALPHA_SIZE = 26;
 const char alphabet[ALPHA_SIZE] = {'a','b','c','d','e','f','g','h','i','j','k',
 								   'l','m','n','o','p','q','r','s','t','u','v',
@@ -53,7 +53,7 @@ void import_dictionary(istream &in_stream){
 int shortest_path(string first_word, string second_word){
     
     /*	each pair (node) contains a string (a word in the dictionary) and an
-    		integer (distance from first_word to that word) */
+    	integer (distance from first_word to that word) */
     pair<string,int> current_node (first_word, 0);
     
     int length = -1;	
