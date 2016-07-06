@@ -10,16 +10,16 @@ using namespace std;
 int main(int argc, char **argv){
     
     string first_word, second_word;
-    	ifstream in_stream;
+    ifstream in_stream;
     	
-    	if (argv[1] != NULL){
-    		in_stream.open(argv[1]);
-    	}
-    	else {
-    		cerr << endl << "User has not provided an input file argument." << endl;
-    		cerr << "Try typing ./dictionary_dash test0.txt" << endl << endl;
-    		return NO_INPUT_FILE;
-    	}
+    if (argv[1] != NULL){
+    	in_stream.open(argv[1]);
+    }
+    else {
+    	cerr << endl << "User has not provided an input file argument." << endl;
+    	cerr << "Try typing ./dictionary_dash test0.txt" << endl << endl;
+    	return NO_INPUT_FILE;
+    }
     
     in_stream >> first_word >> second_word;
     
