@@ -16,7 +16,6 @@ const char alphabet[ALPHA_SIZE] = {'a','b','c','d','e','f','g','h','i','j','k',
 								   'l','m','n','o','p','q','r','s','t','u','v',
 								   'w','x','y','z'};
 
-
 /* HELPER FUNCTIONS */
 bool word_in_dictionary(string word){
 	unordered_map<string, int>::const_iterator it = dictionary.find(word);
