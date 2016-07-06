@@ -1,15 +1,21 @@
-README: Dictionary Dash
+# Dictionary Dash
+
 Author: kshea
 Date:	July 5, 2016
 
-Input: two words and a dictionary.
+##Input
 
-Output: number of single letter modifications needed to go from the first word
+two words and a dictionary.
+
+##Output
+
+number of single letter modifications needed to go from the first word
 to the second word. Single letter modifications can only be made if the new
 word is also a word in the dictionary.
 
 
-How to run this program:
+##How to run this program:
+
 1. Unzip the folder.
 2. Navigate to the executable location in the folder on the command line.
 3. Type in: ./dictionary_dash [INPUT_FILE]
