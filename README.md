@@ -34,10 +34,15 @@ test9.txt
 test8.txt was a blank file which couldn't be uploaded.
 
 Additional input files can be created and should be formatted as follows:
+
 first_word
+
 second_word
 
+
 dictionary_word_1
+
 dictionary_word_2
+
 ...
 
