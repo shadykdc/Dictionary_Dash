@@ -72,7 +72,7 @@ int shortest_path(string first_word, string second_word){
             length = current_node.second;
             return length;
         }
-        for (int i = 0; i < current_node.first.length(); i++){
+        for (int i = 0; i < (int)current_node.first.length(); i++){
             for (int j = 0; j < ALPHA_SIZE; j++){
                 new_word = current_node.first;
                 new_word[i] = alphabet[j];
@@ -95,21 +95,21 @@ int shortest_path(string first_word, string second_word){
 
 int check_input_file(string first_word, string second_word){
 	
-	for (int i = 0; i < first_word.length(); i++){
+	for (int i = 0; i < (int)first_word.length(); i++){
     		if (!islower(first_word[i])){
     			cerr << first_word << " contains invalid characters." << endl;
     			return WORD_IS_NOT_VALID;
     		}
     	}
     	
-    	for (int i = 0; i < second_word.length(); i++){
+    	for (int i = 0; i < (int)second_word.length(); i++){
     		if (!islower(second_word[i])){
     			cerr << second_word << " contains invalid characters." << endl;
     			return WORD_IS_NOT_VALID;
     		}
     	}
 	
-    if (!word_in_dictionary(first_word)){
+	if (!word_in_dictionary(first_word)){
     		cerr << first_word << " is not in the provided dictionary." << endl;
     		return WORD_IS_NOT_IN_DICTIONARY;
     	}
