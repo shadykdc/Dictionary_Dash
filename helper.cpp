@@ -13,8 +13,8 @@ unordered_map<string, int> dictionary;	// dictionary stored as a hash table
 unordered_map<string, int> visited;	// hash table of words visited during shortest_path()
 const int ALPHA_SIZE = 26;
 const char alphabet[ALPHA_SIZE] = {'a','b','c','d','e','f','g','h','i','j','k',
-								   'l','m','n','o','p','q','r','s','t','u','v',
-								   'w','x','y','z'};
+				   'l','m','n','o','p','q','r','s','t','u','v',
+				   'w','x','y','z'};
 
 /* HELPER FUNCTIONS */
 bool word_in_dictionary(string word){
