@@ -64,26 +64,26 @@ int shortest_path(string first_word, string second_word){
 	pair<string, int> first_item (first_word, fn(first_word));
 	visited.insert(dictionary.begin(), first_item);
     
-    /* breadth-first-search */
+	/* breadth-first-search */
 	while(!q.empty()){
 		current_node = q.front();
-	    if (current_node.first == second_word){
-	        length = current_node.second;
-	        return length;
-	    }
-	    for (int i = 0; i < (int)current_node.first.length(); i++){
-	      	for (int j = 0; j < ALPHA_SIZE; j++){
-		        new_word = current_node.first;
-		        new_word[i] = alphabet[j];
-		        if (new_word == current_node.first){
-		           	continue;
-		        }
-		        if (word_in_dictionary(new_word) && !visited_word(new_word)){
-		         	pair<string,int> new_node (new_word, current_node.second+1);
-		           	pair<string, int> visited_item (new_word, fn(new_word));
+		if (current_node.first == second_word){
+			length = current_node.second;
+			return length;
+		}
+		for (int i = 0; i < (int)current_node.first.length(); i++){
+			for (int j = 0; j < ALPHA_SIZE; j++){
+				new_word = current_node.first;
+				new_word[i] = alphabet[j];
+				if (new_word == current_node.first){
+					continue;
+				}
+				if (word_in_dictionary(new_word) && !visited_word(new_word)){
+					pair<string,int> new_node (new_word, current_node.second+1);
+					pair<string, int> visited_item (new_word, fn(new_word));
 					visited.insert(dictionary.begin(), visited_item);
-		           	q.push(new_node);
-			    }
+					q.push(new_node);
+				}
 			}
 		}
         q.pop();
