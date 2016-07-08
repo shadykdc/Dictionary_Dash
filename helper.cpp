@@ -62,7 +62,7 @@ int shortest_path(string first_word, string second_word){
 	  
 	unordered_map<string, int>::hasher fn = visited.hash_function();
 	pair<string, int> first_item (first_word, fn(first_word));
-	visited.insert(dictionary.begin(), first_item);
+	visited.insert(visited.begin(), first_item);
     
 	/* breadth-first-search */
 	while(!q.empty()){
@@ -81,7 +81,7 @@ int shortest_path(string first_word, string second_word){
 				if (word_in_dictionary(new_word) && !visited_word(new_word)){
 					pair<string,int> new_node (new_word, current_node.second+1);
 					pair<string, int> visited_item (new_word, fn(new_word));
-					visited.insert(dictionary.begin(), visited_item);
+					visited.insert(visited.begin(), visited_item);
 					q.push(new_node);
 				}
 			}
