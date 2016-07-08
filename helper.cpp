@@ -43,7 +43,7 @@ void import_dictionary(istream &in_stream){
 		if (!word_in_dictionary(word)){
 			pair<string, int> new_item (word, fn(word));
 			dictionary.insert(dictionary.begin(), new_item);
-    	}
+    		}
 	}
 	return;
 }
