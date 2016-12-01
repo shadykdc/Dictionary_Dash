@@ -8,9 +8,8 @@ Date:	July 5, 2016
 
 Given two words  and a dictionary, find the length of shortest transformation sequence from first_word to second_word, such that:
 
-Only one letter can be changed at a time.
-
-Each intermediate word must exist in the dictionary.
+* Only one letter can be changed at a time.
+* Each intermediate word must exist in the dictionary.
 
 For example, Given: start = “hit” end = “cog” dict = ["hot","dot","dog","lot","log"]
 
